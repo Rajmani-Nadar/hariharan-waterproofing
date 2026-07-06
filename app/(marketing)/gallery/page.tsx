@@ -24,7 +24,11 @@ export default function GalleryPage() {
         <div className="rounded-[2.5rem] border border-white/70 bg-white/70 p-8 shadow-[0_30px_100px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-12 lg:p-16">
           <SectionHeading eyebrow="Gallery" title="A visual record of careful preparation, precise application, and durable results." description="We document the journey from inspection through to finished protection so that every stage is transparent." />
           <div className="mt-10">
-            <Gallery items={[{ src: "/assets/illustrations/project-riverside.svg", alt: "Roof waterproofing inspection" }, { src: "/assets/illustrations/project-harbor.svg", alt: "Basement waterproofing treatment" }, { src: "/assets/illustrations/project-cedar.svg", alt: "Terrace protection outcome" }]} />
+            <Gallery items={[
+              { src: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80", alt: "Roof waterproofing inspection on a modern residence", priority: true },
+              { src: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80", alt: "Basement waterproofing treatment on a contemporary property" },
+              { src: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80", alt: "Terrace protection outcome on a premium building" },
+            ]} />
           </div>
         </div>
       </SectionWrapper>

@@ -13,7 +13,7 @@ export function BeforeAfterSlider({
   const [range, setRange] = useState(50);
 
   return (
-    <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-3 shadow-xl">
+    <div className="rounded-[2rem] border border-slate-200/80 bg-slate-950 p-3 shadow-[0_24px_80px_rgba(15,23,42,0.16)]">
       <div className="relative overflow-hidden rounded-[1.5rem]">
         <div className="relative aspect-[16/10] w-full bg-[linear-gradient(135deg,#f4efe5_0%,#dce7e5_100%)]" />
         <motion.div

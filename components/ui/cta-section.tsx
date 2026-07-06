@@ -15,7 +15,7 @@ export function CtaSection({
   secondaryHref?: string;
 }) {
   return (
-    <section className="rounded-[2.25rem] border border-slate-200 bg-slate-950 px-8 py-16 text-white shadow-2xl sm:px-10 lg:px-14">
+    <section className="rounded-[2.5rem] border border-white/10 bg-slate-950 px-8 py-16 text-white shadow-[0_30px_120px_rgba(2,6,23,0.25)] sm:px-10 lg:px-14 lg:py-20">
       <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-2xl">
           {eyebrow ? <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">{eyebrow}</p> : null}

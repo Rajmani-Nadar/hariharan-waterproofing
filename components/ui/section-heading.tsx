@@ -19,10 +19,10 @@ export function SectionHeading({
   return (
     <div className={cn("flex flex-col gap-4", alignment, className)}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-slate-950 sm:text-4xl">
+      <h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-slate-950 sm:text-4xl lg:text-5xl">
         {title}
       </h2>
-      {description ? <p className="max-w-2xl text-base leading-8 text-slate-600">{description}</p> : null}
+      {description ? <p className="max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">{description}</p> : null}
     </div>
   );
 }

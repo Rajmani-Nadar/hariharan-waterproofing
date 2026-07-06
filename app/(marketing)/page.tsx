@@ -44,7 +44,7 @@ export default function HomePage() {
       />
       <PremiumHero />
       <SectionWrapper className="bg-transparent">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-3">
           <GlassCard className="p-8">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-white"><Droplets className="h-6 w-6" /></div>
             <h3 className="mt-6 text-xl font-semibold text-slate-950">Waterproofing expertise</h3>

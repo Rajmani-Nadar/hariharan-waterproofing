@@ -12,7 +12,7 @@ export function SectionWrapper({
   padded?: boolean;
 }) {
   return (
-    <section id={id} className={cn("relative w-full", padded && "px-6 py-20 sm:px-8 lg:px-12 lg:py-28", className)}>
+    <section id={id} className={cn("relative w-full", padded && "px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-28 xl:px-12", className)}>
       <div className="mx-auto flex w-full max-w-7xl flex-col">{children}</div>
     </section>
   );

@@ -198,21 +198,21 @@ export const projects: ProjectItem[] = [
     type: "Private villa",
     location: "Bengaluru",
     description: "A full-roof and terrace treatment for a contemporary hillside home with persistent seepage issues.",
-    image: "/assets/illustrations/project-riverside.svg",
+    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Harbor Office Tower",
     type: "Commercial retrofit",
     location: "Mumbai",
     description: "Basement and podium waterproofing works completed with zero disruption to operations.",
-    image: "/assets/illustrations/project-harbor.svg",
+    image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
   },
   {
     title: "Cedar Apartment Complex",
     type: "Multi-unit residential",
     location: "Pune",
     description: "Wet-area and expansion-joint protection for a large residential community with active water ingress.",
-    image: "/assets/illustrations/project-cedar.svg",
+    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 

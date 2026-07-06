@@ -12,7 +12,7 @@ export function Counters({ items }: { items: Array<{ value: number; label: strin
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-5"
+          className="rounded-[1.35rem] border border-slate-200/80 bg-white/80 p-6 shadow-[0_16px_50px_rgba(15,23,42,0.04)]"
         >
           <p className="text-3xl font-semibold tracking-[-0.02em] text-slate-950">
             <CountUp end={item.value} duration={2.6} suffix={item.suffix ?? ""} />

@@ -15,8 +15,8 @@ export function ServiceCard({
   className?: string;
 }) {
   return (
-    <div className={cn("group rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl", className)}>
-      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-white">
+    <div className={cn("group rounded-[1.75rem] border border-slate-200/80 bg-white p-8 shadow-[0_16px_60px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_24px_90px_rgba(15,23,42,0.1)]", className)}>
+      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg shadow-slate-950/10">
         {icon ?? <ShieldCheck className="h-6 w-6" />}
       </div>
       <h3 className="mt-6 text-xl font-semibold text-slate-950">{title}</h3>
