@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Northstar Waterproofing",
-  shortName: "Northstar",
+  name: "Hariharan Waterproofing",
+  shortName: "Hariharan",
   description:
     "Premium waterproofing solutions for roofs, basements, terraces, and wet areas with transparent diagnostics and long-term protection.",
-  url: "https://northstar-waterproofing.com",
+  url: "https://hariharan-waterproofing.com",
   ogImage: "/assets/brand/og-image.jpg",
   keywords: [
     "waterproofing",

@@ -31,8 +31,8 @@ export default function HomePage() {
         data={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          name: "Northstar Waterproofing",
-          url: "https://northstar-waterproofing.com",
+          name: "Hariharan Waterproofing",
+          url: "https://hariharan-waterproofing.com",
           telephone: "+919999999999",
           address: {
             "@type": "PostalAddress",

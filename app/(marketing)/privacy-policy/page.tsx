@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export const metadata = createMetadata({
   title: "Privacy Policy",
-  description: "How Northstar Waterproofing handles your personal information and contact details.",
+  description: "How Hariharan Waterproofing handles your personal information and contact details.",
   path: "/privacy-policy",
 });
 
