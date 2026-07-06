@@ -9,8 +9,10 @@ import { PremiumButton } from "@/components/ui/premium-button";
 
 export function Navbar({
   links,
+  serviceItems,
 }: {
   links: Array<{ label: string; href: string; description?: string }>;
+  serviceItems?: Array<{ label: string; href: string; description?: string }>;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -23,7 +25,10 @@ export function Navbar({
         <nav className="hidden items-center gap-7 lg:flex">
           {links.map((link) =>
             link.label === "Services" ? (
-              <MegaMenu key={link.label} items={links.filter((item) => item.label !== "Services").map((item) => ({ label: item.label, href: item.href, description: item.description ?? "" }))} />
+              <MegaMenu
+                key={link.label}
+                items={serviceItems ?? links.filter((item) => item.label !== "Services").map((item) => ({ label: item.label, href: item.href, description: item.description ?? "" }))}
+              />
             ) : (
               <Link key={link.label} href={link.href} className="text-sm font-medium text-slate-700 transition hover:text-slate-950">
                 {link.label}

@@ -73,7 +73,13 @@ export default function HomePage() {
         <SectionHeading eyebrow="Core services" title="Specialized systems for every part of the building" description="From roofs to wet areas, our solutions are tailored to the surface, use case, and climate exposure." />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {services.slice(0, 6).map((service) => (
-            <ServiceCard key={service.slug} title={service.title} description={service.description} points={service.highlights} />
+            <ServiceCard
+              key={service.slug}
+              href={`/services/${service.slug}`}
+              title={service.title}
+              description={service.description}
+              points={service.highlights}
+            />
           ))}
         </div>
       </SectionWrapper>

@@ -31,7 +31,13 @@ export default function ServicesPage() {
           <SectionHeading eyebrow="Services" title="Purpose-built waterproofing systems for every surface and building type." description="We combine material science, site assessment, and workmanship to protect what matters most." />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {services.map((service) => (
-              <ServiceCard key={service.slug} title={service.title} description={service.description} points={service.highlights} />
+              <ServiceCard
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                title={service.title}
+                description={service.description}
+                points={service.highlights}
+              />
             ))}
           </div>
         </div>

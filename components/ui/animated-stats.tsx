@@ -20,7 +20,7 @@ export function AnimatedStats({
           className="rounded-[1.5rem] border border-slate-200 bg-white/80 p-6 shadow-sm backdrop-blur"
         >
           <div className="text-3xl font-semibold tracking-[-0.02em] text-slate-950">
-            <CountUp end={stat.value} duration={2.5} suffix={stat.suffix ?? ""} />
+            <CountUp start={0} end={stat.value} duration={3.5} suffix={stat.suffix ?? ""} />
           </div>
           <p className="mt-2 text-sm text-slate-600">{stat.label}</p>
         </motion.div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -6,15 +7,17 @@ export function ServiceCard({
   description,
   points,
   icon,
+  href,
   className,
 }: {
   title: string;
   description: string;
   points?: string[];
   icon?: React.ReactNode;
+  href?: string;
   className?: string;
 }) {
-  return (
+  const content = (
     <div className={cn("group rounded-[1.75rem] border border-slate-200/80 bg-white p-8 shadow-[0_16px_60px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_24px_90px_rgba(15,23,42,0.1)]", className)}>
       <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg shadow-slate-950/10">
         {icon ?? <ShieldCheck className="h-6 w-6" />}
@@ -35,5 +38,15 @@ export function ServiceCard({
         Explore solution <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
       </div>
     </div>
+  );
+
+  if (!href) {
+    return content;
+  }
+
+  return (
+    <Link href={href} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-4 focus-visible:ring-offset-white">
+      {content}
+    </Link>
   );
 }

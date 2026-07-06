@@ -23,9 +23,9 @@ export function BeforeAfterSlider({
         >
           <div className="h-full w-[100vw] max-w-none bg-[linear-gradient(135deg,#112f3a_0%,#2d6a4f_100%)]" />
         </motion.div>
-        <div className="absolute inset-x-0 top-4 flex justify-between px-4 text-sm font-medium text-white/90">
-          <span>{beforeLabel}</span>
-          <span>{afterLabel}</span>
+        <div className="absolute inset-x-0 top-4 flex justify-between px-4 text-sm font-semibold text-white/95">
+          <span className="text-white/95 shadow-[0_0_10px_rgba(0,0,0,0.3)]">{beforeLabel}</span>
+          <span className="text-white/95 shadow-[0_0_12px_rgba(0,0,0,0.35)]">{afterLabel}</span>
         </div>
         <input
           type="range"
