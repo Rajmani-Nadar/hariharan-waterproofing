@@ -9,7 +9,7 @@ type AccordionProps = Omit<AccordionPrimitive.Root.Props, "multiple" | "type"> &
   collapsible?: boolean;
 };
 
-function Accordion({ className, type = "single", collapsible, ...props }: AccordionProps) {
+function Accordion({ className, type = "single", ...props }: AccordionProps) {
   const multiple = type === "multiple";
 
   return (

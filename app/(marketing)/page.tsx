@@ -5,7 +5,6 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ServiceCard } from "@/components/ui/service-card";
 import { AnimatedStats } from "@/components/ui/animated-stats";
-import { Counters } from "@/components/ui/counters";
 import { Timeline } from "@/components/ui/timeline";
 import { Testimonials } from "@/components/ui/testimonials";
 import { FaqAccordion } from "@/components/ui/faq-accordion";
@@ -16,15 +15,21 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { ContactForm } from "@/components/ui/contact-form";
 import { services, testimonials as testimonialData, faqs, projects } from "@/lib/content";
 import { StructuredData } from "@/components/seo/structured-data";
-import { ShieldCheck, Droplets, House, Sparkles } from "lucide-react";
+import { CheckCircle2, Clock3, Droplets, House, Layers3, ShieldCheck, Sparkles } from "lucide-react";
 
 export const metadata = createMetadata({
   title: "Premium Waterproofing Services for Long-Term Building Protection",
-  description: "Discover premium waterproofing solutions for roof, basement, terrace, and wet-area protection with transparent diagnostics and lasting craftsmanship.",
+  description: "Discover premium waterproofing solutions for roofs, basements, terraces, and wet areas with transparent diagnostics, premium materials, and dependable craftsmanship.",
   path: "/",
 });
 
 export default function HomePage() {
+  const trustPoints = [
+    { icon: <ShieldCheck className="h-5 w-5" />, title: "Free site inspection", description: "We start with a clear diagnosis before recommending a system." },
+    { icon: <Clock3 className="h-5 w-5" />, title: "On-time completion", description: "Detailed scheduling and site management keep the work efficient." },
+    { icon: <Layers3 className="h-5 w-5" />, title: "Premium materials", description: "We use application-specific products designed for performance and longevity." },
+  ];
+
   return (
     <PageShell>
       <StructuredData
@@ -43,6 +48,23 @@ export default function HomePage() {
         }}
       />
       <PremiumHero />
+      <SectionWrapper className="bg-transparent -mt-2 md:-mt-4">
+        <div className="rounded-[2rem] border border-slate-200/80 bg-white/70 p-6 shadow-[0_20px_80px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-8">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {trustPoints.map((point) => (
+              <div key={point.title} className="flex gap-3 rounded-[1.35rem] border border-slate-200/70 bg-white/70 p-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-white">
+                  {point.icon}
+                </div>
+                <div>
+                  <h3 className="text-base font-semibold text-slate-950">{point.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{point.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
       <SectionWrapper className="bg-transparent">
         <div className="grid gap-5 md:grid-cols-3">
           <GlassCard className="p-8">
@@ -64,10 +86,17 @@ export default function HomePage() {
       </SectionWrapper>
       <SectionWrapper>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeading eyebrow="Why waterproofing matters" title="Moisture problems become expensive when ignored." description="We help property owners stop leaks at the source, protect their interiors, and avoid unnecessary rebuild costs." />
+          <SectionHeading eyebrow="Why choose us" title="Trusted for precision, clarity, and durable execution." description="We help property owners stop leaks at the source, protect their interiors, and avoid unnecessary rebuild costs." />
           <div className="rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-sm text-slate-600">Inspection-led treatment with measurable outcomes</div>
         </div>
-        <AnimatedStats stats={[{ value: 98, suffix: "%", label: "Leak resolution success" }, { value: 20, suffix: "+", label: "Years of applied experience" }, { value: 10, suffix: " yrs", label: "Typical system durability" }]} />
+        <div className="mt-8">
+          <AnimatedStats stats={[
+            { value: 1500, suffix: "+", label: "Projects completed", icon: <CheckCircle2 className="h-6 w-6" />, accent: "from-slate-900/10 to-cyan-500/10" },
+            { value: 15, suffix: "+", label: "Years experience", icon: <ShieldCheck className="h-6 w-6" />, accent: "from-cyan-500/10 to-emerald-500/10" },
+            { value: 98, suffix: "%", label: "Customer satisfaction", icon: <Sparkles className="h-6 w-6" />, accent: "from-emerald-500/10 to-slate-900/10" },
+            { value: 10, suffix: " yrs", label: "Warranty available", icon: <ShieldCheck className="h-6 w-6" />, accent: "from-slate-900/10 to-amber-500/10" },
+          ]} />
+        </div>
       </SectionWrapper>
       <SectionWrapper className="bg-white/70">
         <SectionHeading eyebrow="Core services" title="Specialized systems for every part of the building" description="From roofs to wet areas, our solutions are tailored to the surface, use case, and climate exposure." />
@@ -98,7 +127,7 @@ export default function HomePage() {
       <SectionWrapper>
         <SectionHeading eyebrow="Gallery preview" title="Trusted by homeowners, architects, and property managers" description="Our projects balance technical performance with a calm, well-managed site experience." />
         <div className="mt-10">
-          <Gallery items={projects.slice(0, 3).map((project) => ({ src: project.image, alt: project.title }))} />
+          <Gallery items={projects.slice(0, 3).map((project) => ({ src: project.image, alt: project.title, title: project.type, category: project.type, description: project.location }))} />
         </div>
       </SectionWrapper>
       <SectionWrapper className="bg-white/70">

@@ -22,6 +22,7 @@ export interface TestimonialItem {
   quote: string;
   author: string;
   role: string;
+  location?: string;
 }
 
 export interface BlogPost {
@@ -220,17 +221,20 @@ export const testimonials: TestimonialItem[] = [
   {
     quote: "The team diagnosed the issue quickly and delivered a system that has kept the terrace dry through every monsoon.",
     author: "Aarav Mehta",
-    role: "Homeowner, Bengaluru",
+    role: "Homeowner",
+    location: "Bengaluru",
   },
   {
     quote: "Their process felt thoughtful and transparent. We understood the plan, the risks, and the outcome from day one.",
     author: "Shalini Rao",
-    role: "Property Manager, Mumbai",
+    role: "Property Manager",
+    location: "Mumbai",
   },
   {
     quote: "We finally have a waterproofing solution that feels engineered, not improvised.",
     author: "Nikhil Verma",
-    role: "Architect, Pune",
+    role: "Architect",
+    location: "Pune",
   },
 ];
 
