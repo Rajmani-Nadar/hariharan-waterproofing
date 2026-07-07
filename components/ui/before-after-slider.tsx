@@ -18,8 +18,8 @@ export function BeforeAfterSlider({
       <div className="relative overflow-hidden rounded-[1.5rem]">
         <div className="relative aspect-[16/10] w-full">
           <Image
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"
-            alt="Before treatment condition"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80"
+            alt="After treatment condition"
             fill
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -31,8 +31,8 @@ export function BeforeAfterSlider({
         <motion.div className="absolute inset-y-0 left-0 overflow-hidden" animate={{ width: `${range}%` }} transition={{ duration: 0.2 }}>
           <div className="relative h-full w-[100vw] max-w-none">
             <Image
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80"
-              alt="After treatment condition"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"
+              alt="Before treatment condition"
               fill
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
