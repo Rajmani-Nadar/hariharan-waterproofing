@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export const metadata = createMetadata({
   title: "Terms and Conditions",
-  description: "Terms for engaging Hariharan Waterproofing for inspection and treatment services.",
+  description: "Terms for engaging HN Waterproofing for inspection and treatment services.",
   path: "/terms",
 });
 

@@ -13,6 +13,7 @@ import { Gallery } from "@/components/ui/gallery";
 import { BeforeAfterSlider } from "@/components/ui/before-after-slider";
 import { GlassCard } from "@/components/ui/glass-card";
 import { ContactForm } from "@/components/ui/contact-form";
+import { ServiceAreas } from "@/components/ui/service-areas";
 import { services, testimonials as testimonialData, faqs, projects } from "@/lib/content";
 import { StructuredData } from "@/components/seo/structured-data";
 import { CheckCircle2, Clock3, Droplets, House, Layers3, ShieldCheck, Sparkles } from "lucide-react";
@@ -129,6 +130,9 @@ export default function HomePage() {
         <div className="mt-10">
           <Gallery items={projects.slice(0, 3).map((project) => ({ src: project.image, alt: project.title, title: project.type, category: project.type, description: project.location }))} />
         </div>
+      </SectionWrapper>
+      <SectionWrapper>
+        <ServiceAreas />
       </SectionWrapper>
       <SectionWrapper className="bg-white/70">
         <SectionHeading eyebrow="Client perspective" title="Professionally delivered and genuinely reassuring" description="Clients value our thoughtful communication, decisive execution, and lasting results." />

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Hariharan Waterproofing",
-  shortName: "Hariharan",
+  name: "HN Waterproofing",
+  shortName: "HN",
   description:
     "Premium waterproofing solutions for roofs, basements, terraces, and wet areas with transparent diagnostics, premium materials, and lasting protection.",
   url: "https://hariharan-waterproofing.com",

@@ -3,13 +3,13 @@ import { Accordion as AccordionPrimitive } from "@base-ui/react/accordion"
 import { cn } from "@/lib/utils"
 import { ChevronDownIcon, ChevronUpIcon } from "lucide-react"
 
-type AccordionProps = Omit<AccordionPrimitive.Root.Props, "multiple" | "type"> & {
+type AccordionProps = Omit<AccordionPrimitive.Root.Props, "multiple" | "type" | "collapsible"> & {
   className?: string;
   type?: "single" | "multiple";
   collapsible?: boolean;
 };
 
-function Accordion({ className, type = "single", ...props }: AccordionProps) {
+function Accordion({ className, type = "single", collapsible, ...props }: AccordionProps) {
   const multiple = type === "multiple";
 
   return (

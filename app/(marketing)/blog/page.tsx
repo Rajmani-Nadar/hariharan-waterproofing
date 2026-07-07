@@ -19,7 +19,7 @@ export default function BlogPage() {
       <StructuredData data={{
         "@context": "https://schema.org",
         "@type": "Blog",
-        name: "Hariharan Waterproofing Blog",
+        name: "HN Waterproofing Blog",
       }} />
       <SectionWrapper className="pt-20">
         <div className="rounded-[2.5rem] border border-white/70 bg-white/70 p-8 shadow-[0_30px_100px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-12 lg:p-16">

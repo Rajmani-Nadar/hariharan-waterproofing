@@ -8,8 +8,8 @@ import { StructuredData } from "@/components/seo/structured-data";
 import { AlertTriangle, Clock3, Mail, MapPin, PhoneCall } from "lucide-react";
 
 export const metadata = createMetadata({
-  title: "Contact Hariharan Waterproofing — Free Inspection Booking",
-  description: "Get in touch with Hariharan Waterproofing for a free inspection, service enquiry, or professional waterproofing consultation.",
+  title: "Contact HN Waterproofing — Free Inspection Booking",
+  description: "Get in touch with HN Waterproofing for a free inspection, service enquiry, or professional waterproofing consultation.",
   path: "/contact",
 });
 
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <StructuredData data={{
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        name: "Contact Hariharan Waterproofing",
+        name: "Contact HN Waterproofing",
       }} />
       <SectionWrapper className="pt-20">
         <div className="rounded-[2.5rem] border border-white/70 bg-white/70 p-8 shadow-[0_30px_100px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-12 lg:p-16">
@@ -35,8 +35,8 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-600">
-                  <li className="flex items-center justify-between gap-3 border-b border-slate-200/70 pb-3"><span>Phone</span><a href="tel:+919999999999" className="font-medium text-slate-900 hover:text-slate-700">+91 99999 99999</a></li>
-                  <li className="flex items-center justify-between gap-3 border-b border-slate-200/70 pb-3"><span>WhatsApp</span><a href="https://wa.me/919999999999" className="font-medium text-slate-900 hover:text-slate-700">Message now</a></li>
+                  <li className="flex items-center justify-between gap-3 border-b border-slate-200/70 pb-3"><span>Phone</span><a href="tel:+918838980734" className="font-medium text-slate-900 hover:text-slate-700">+91 88389 80734</a></li>
+                  <li className="flex items-center justify-between gap-3 border-b border-slate-200/70 pb-3"><span>WhatsApp</span><a href="https://wa.me/918838980734" className="font-medium text-slate-900 hover:text-slate-700">Message now</a></li>
                   <li className="flex items-center justify-between gap-3"><span>Emergency</span><span className="font-medium text-slate-900">24/7 response for urgent leaks</span></li>
                 </ul>
               </GlassCard>
@@ -49,8 +49,8 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-                  <p className="text-sm font-semibold text-slate-900">Hariharan Waterproofing</p>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">No. 14, Industrial Layout, Bengaluru, Karnataka 560001</p>
+                  <p className="text-sm font-semibold text-slate-900">HN Waterproofing</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">Leakzen Waterproofing MB981, Brinthavan Avenue, Ganapathy Maa Nagar, Ganapathy, Coimbatore, Tamil Nadu 641006</p>
                   <div className="mt-4 flex aspect-[16/10] items-center justify-center rounded-[1.25rem] border border-dashed border-slate-300 bg-[radial-gradient(circle_at_top_left,rgba(15,76,92,0.12),transparent_45%)] text-center text-sm font-medium text-slate-600">
                     Google Maps embed placeholder
                   </div>
@@ -61,12 +61,12 @@ export default function ContactPage() {
                   <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white"><Mail className="h-4 w-4" /></div>
                     <p className="mt-4 text-sm font-semibold text-slate-900">Email</p>
-                    <a href="mailto:hello@hariharan.com" className="mt-2 block text-sm text-slate-600 hover:text-slate-900">hello@hariharan.com</a>
+                    <a href="mailto:hariharanbs142@gmail.com" className="mt-2 block text-sm text-slate-600 hover:text-slate-900">hariharanbs142@gmail.com</a>
                   </div>
                   <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white"><Clock3 className="h-4 w-4" /></div>
                     <p className="mt-4 text-sm font-semibold text-slate-900">Working hours</p>
-                    <p className="mt-2 text-sm text-slate-600">Mon–Sat · 8:00 AM – 7:00 PM</p>
+                    <p className="mt-2 text-sm text-slate-600">24/7</p>
                   </div>
                 </div>
                 <div className="mt-4 flex items-start gap-3 rounded-[1.25rem] border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">

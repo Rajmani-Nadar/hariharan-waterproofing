@@ -2,14 +2,15 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { ArrowUpRight, X } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export function Gallery({ items }: { items: Array<{ src: string; alt: string; title?: string; priority?: boolean; category?: string; description?: string }> }) {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [selectedItem, setSelectedItem] = useState<(typeof items)[number] | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const categories = useMemo(() => ["All", ...Array.from(new Set(items.map((item) => item.category ?? "Featured")))], [items]);
   const visibleItems = activeFilter === "All" ? items : items.filter((item) => item.category === activeFilter);
+  const selectedItem = selectedIndex !== null ? visibleItems[selectedIndex] : null;
 
   return (
     <>
@@ -28,11 +29,11 @@ export function Gallery({ items }: { items: Array<{ src: string; alt: string; ti
         </div>
       ) : null}
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {visibleItems.map((item) => (
+        {visibleItems.map((item, index) => (
           <button
             key={item.alt}
             type="button"
-            onClick={() => setSelectedItem(item)}
+            onClick={() => setSelectedIndex(index)}
             className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white text-left shadow-[0_16px_60px_rgba(15,23,42,0.05)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
           >
             <div className="relative aspect-[4/5] overflow-hidden">
@@ -62,8 +63,24 @@ export function Gallery({ items }: { items: Array<{ src: string; alt: string; ti
       {selectedItem ? (
         <div className="fixed inset-0 z-[70] flex items-center justify-center bg-slate-950/80 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Project preview">
           <div className="relative w-full max-w-5xl overflow-hidden rounded-[2rem] border border-white/15 bg-slate-950 text-white shadow-2xl">
-            <button type="button" aria-label="Close preview" onClick={() => setSelectedItem(null)} className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white backdrop-blur">
+            <button type="button" aria-label="Close preview" onClick={() => setSelectedIndex(null)} className="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white backdrop-blur">
               <X className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              aria-label="Previous image"
+              onClick={() => setSelectedIndex((current) => (current === null ? null : (current - 1 + visibleItems.length) % visibleItems.length))}
+              className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-3 text-white backdrop-blur transition hover:bg-white/20"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              aria-label="Next image"
+              onClick={() => setSelectedIndex((current) => (current === null ? null : (current + 1) % visibleItems.length))}
+              className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/15 bg-white/10 p-3 text-white backdrop-blur transition hover:bg-white/20"
+            >
+              <ChevronRight className="h-5 w-5" />
             </button>
             <div className="relative aspect-[16/10]">
               <Image src={selectedItem.src} alt={selectedItem.alt} fill className="object-cover" priority sizes="100vw" />
