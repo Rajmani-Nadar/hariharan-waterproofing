@@ -24,8 +24,8 @@ export function Footer() {
             <p className="text-sm font-semibold text-slate-950">Contact</p>
             <ul className="mt-4 space-y-3 text-sm text-slate-600">
               <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> +91 88389 80734</li>
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> hariharanbs142@gmail.com</li>
-              <li className="flex items-center gap-2"><ArrowRight className="h-4 w-4" /> Free inspection available</li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> hnwaterproofing142@gmail.com</li>
+              <li className="flex items-start gap-2"><ArrowRight className="mt-1 h-4 w-4 shrink-0" /> <span>MB981, Brinthavan Avenue, Ganapathy Maa Nagar, Ganapathy, Coimbatore, Tamil Nadu 641006</span></li>
             </ul>
           </div>
         </div>

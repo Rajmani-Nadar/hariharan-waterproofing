@@ -51,8 +51,18 @@ export default function ContactPage() {
                 <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
                   <p className="text-sm font-semibold text-slate-900">HN Waterproofing</p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">Leakzen Waterproofing MB981, Brinthavan Avenue, Ganapathy Maa Nagar, Ganapathy, Coimbatore, Tamil Nadu 641006</p>
-                  <div className="mt-4 flex aspect-[16/10] items-center justify-center rounded-[1.25rem] border border-dashed border-slate-300 bg-[radial-gradient(circle_at_top_left,rgba(15,76,92,0.12),transparent_45%)] text-center text-sm font-medium text-slate-600">
-                    Google Maps embed placeholder
+                  <div className="mt-4 overflow-hidden rounded-[1.25rem] border border-slate-200">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8709875722034!2d76.99498627028767!3d11.048298165066004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6450b0870d8ae0d1%3A0x1661b3d84f573ce1!2sLeakzen%20Waterproofing!5e0!3m2!1sen!2sin!4v1783404478577!5m2!1sen!2sin"
+                      title="Leakzen Waterproofing location"
+                      width="100%"
+                      height="260"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      className="w-full"
+                    />
                   </div>
                 </div>
               </GlassCard>
@@ -61,7 +71,7 @@ export default function ContactPage() {
                   <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white"><Mail className="h-4 w-4" /></div>
                     <p className="mt-4 text-sm font-semibold text-slate-900">Email</p>
-                    <a href="mailto:hariharanbs142@gmail.com" className="mt-2 block text-sm text-slate-600 hover:text-slate-900">hariharanbs142@gmail.com</a>
+                    <a href="mailto:hnwaterproofing142@gmail.com" className="mt-2 block text-sm text-slate-600 hover:text-slate-900">hnwaterproofing142@gmail.com</a>
                   </div>
                   <div className="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-950 text-white"><Clock3 className="h-4 w-4" /></div>
