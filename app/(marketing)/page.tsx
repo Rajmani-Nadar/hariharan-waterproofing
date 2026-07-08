@@ -37,15 +37,69 @@ export default function HomePage() {
         data={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
+          "@id": "https://hariharan-waterproofing.vercel.app",
           name: "Hariharan Waterproofing",
+          alternateName: "HN Waterproofing",
           url: "https://hariharan-waterproofing.vercel.app",
-          telephone: "+919999999999",
+          logo: "https://hariharan-waterproofing.vercel.app/logo.png",
+          image: "https://hariharan-waterproofing.vercel.app/logo.png",
+          description: "Premium waterproofing solutions for roofs, basements, terraces, and wet areas with transparent diagnostics, premium materials, and lasting protection.",
+          telephone: "+91-88389-80734",
+          email: "hnwaterproofing142@gmail.com",
           address: {
             "@type": "PostalAddress",
+            streetAddress: "MB981, Brinthavan Avenue, Ganapathy Maa Nagar",
+            addressLocality: "Coimbatore",
+            addressRegion: "Tamil Nadu",
+            postalCode: "641006",
             addressCountry: "IN",
           },
-          description: "Premium waterproofing services for residential and commercial properties.",
-          areaServed: "India",
+          areaServed: [
+            { "@type": "City", name: "Coimbatore" },
+            { "@type": "City", name: "Tiruppur" },
+          ],
+          serviceArea: [
+            "Ganapathy",
+            "RS Puram",
+            "Peelamedu",
+            "Saravanampatti",
+            "Singanallur",
+            "Tiruppur",
+          ],
+          priceRange: "Contact for Quote",
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              opens: "00:00",
+              closes: "23:59",
+            },
+          ],
+        }}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Hariharan Waterproofing",
+          alternateName: "HN Waterproofing",
+          url: "https://hariharan-waterproofing.vercel.app",
+          logo: "https://hariharan-waterproofing.vercel.app/logo.png",
+          description: "Premium waterproofing solutions for residential and commercial properties.",
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "Customer Service",
+            telephone: "+91-88389-80734",
+            email: "hnwaterproofing142@gmail.com",
+          },
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "MB981, Brinthavan Avenue, Ganapathy Maa Nagar",
+            addressLocality: "Coimbatore",
+            addressRegion: "Tamil Nadu",
+            postalCode: "641006",
+            addressCountry: "IN",
+          },
         }}
       />
       <PremiumHero />

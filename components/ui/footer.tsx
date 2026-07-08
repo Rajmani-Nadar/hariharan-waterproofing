@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 
 export function Footer() {
@@ -6,7 +7,13 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-white/70 px-5 py-14 backdrop-blur sm:px-8 lg:px-10 lg:py-16 xl:px-12">
       <div className="mx-auto flex max-w-7xl flex-col gap-10 lg:flex-row lg:justify-between">
         <div className="max-w-xl">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-slate-500">HN Waterproofing</p>
+          <Image
+            src="/logo.png"
+            alt="HN Waterproofing Logo"
+            width={120}
+            height={120}
+            className="h-24 w-24 rounded-lg object-cover"
+          />
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-slate-950">Premium protection for every surface.</h2>
           <p className="mt-4 text-sm leading-8 text-slate-600">
             We combine diagnostic precision, premium materials, and craftsmanship to stop leaks before they become expensive damage.

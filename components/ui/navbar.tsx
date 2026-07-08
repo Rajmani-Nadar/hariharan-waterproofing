@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,8 +20,15 @@ export function Navbar({
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10 xl:px-12">
-        <Link href="/" className="text-lg font-semibold tracking-[-0.02em] text-slate-950">
-          HN
+        <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-[-0.02em] text-slate-950">
+          <Image
+            src="/logo.png"
+            alt="HN Waterproofing Logo"
+            width={140}
+            height={140}
+            className="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 lg:h-28 lg:w-28"
+            priority
+          />
         </Link>
         <nav className="hidden items-center gap-7 lg:flex">
           {links.map((link) =>

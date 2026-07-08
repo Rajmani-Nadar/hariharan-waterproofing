@@ -16,7 +16,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = defaultMetadata;
+export const metadata: Metadata = {
+  ...defaultMetadata,
+  icons: {
+    icon: [
+      {
+        url: "/favicon.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/favicon.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,

@@ -6,6 +6,8 @@ export const siteConfig = {
   description:
     "Premium waterproofing solutions for roofs, basements, terraces, and wet areas with transparent diagnostics, premium materials, and lasting protection.",
   url: "https://hariharan-waterproofing.vercel.app",
+  logo: "/logo.png",
+  favicon: "/favicon.png",
   ogImage: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
   keywords: [
     "waterproofing",
