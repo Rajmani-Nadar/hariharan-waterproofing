@@ -195,25 +195,25 @@ export const services: ServiceItemContent[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: "Riverside Residence",
+    title: "Ganapathy Villa Roof Repair",
     type: "Private villa",
-    location: "Bengaluru",
-    description: "A full-roof and terrace treatment for a contemporary hillside home with persistent seepage issues.",
-    image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
+    location: "Ganapathy, Coimbatore",
+    description: "A full terrace and roof waterproofing treatment for a villa with persistent seepage and ponding issues.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Harbor Office Tower",
-    type: "Commercial retrofit",
-    location: "Mumbai",
-    description: "Basement and podium waterproofing works completed with zero disruption to operations.",
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+    title: "RS Puram Apartment Protection",
+    type: "Residential retrofit",
+    location: "RS Puram, Coimbatore",
+    description: "Basement and wet-area waterproofing completed with minimal disruption for a premium apartment block.",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
   },
   {
-    title: "Cedar Apartment Complex",
-    type: "Multi-unit residential",
-    location: "Pune",
-    description: "Wet-area and expansion-joint protection for a large residential community with active water ingress.",
-    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80",
+    title: "Saravanampatti Commercial Project",
+    type: "Commercial waterproofing",
+    location: "Saravanampatti, Coimbatore",
+    description: "Expansion-joint and terrace protection for a commercial building facing monsoon-related leak problems.",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 

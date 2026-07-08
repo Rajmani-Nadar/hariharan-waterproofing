@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://hariharan-waterproofing.com/sitemap.xml",
+    sitemap: "https://hariharan-waterproofing.vercel.app/sitemap.xml",
   };
 }

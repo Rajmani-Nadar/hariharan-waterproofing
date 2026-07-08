@@ -38,7 +38,7 @@ export default function HomePage() {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "Hariharan Waterproofing",
-          url: "https://hariharan-waterproofing.com",
+          url: "https://hariharan-waterproofing.vercel.app",
           telephone: "+919999999999",
           address: {
             "@type": "PostalAddress",

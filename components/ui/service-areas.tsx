@@ -6,25 +6,21 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { MapPin } from "lucide-react";
 
 const locationsLeft = [
-  "Coimbatore City",
-  "Gandhipuram",
-  "Saibaba Colony",
-  "Singanallur",
-  "Vadavalli",
   "Ganapathy",
-  "Sulur",
-  "Tirupur",
+  "RS Puram",
+  "Peelamedu",
+  "Singanallur",
+  "Saravanampatti",
+  "Tiruppur",
 ];
 
 const locationsRight = [
-  "RS Puram",
-  "Peelamedu",
+  "Gandhipuram",
+  "Saibaba Colony",
+  "Vadavalli",
   "Race Course",
-  "Saravanampatti",
   "Thudiyalur",
-  "Ondipudur",
-  "Pollachi",
-  "Mettupalayam",
+  "Sulur",
 ];
 
 export function ServiceAreas() {
@@ -40,10 +36,10 @@ export function ServiceAreas() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Service areas</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-4xl">
-            Waterproofing Services Across Coimbatore Region
+            Waterproofing Services for Coimbatore Localities
           </h2>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-            We provide professional waterproofing services throughout Coimbatore and surrounding areas within a 100km radius. Our team is ready to serve you wherever you are.
+            We provide local waterproofing support across Coimbatore neighborhoods including Ganapathy, RS Puram, Peelamedu, Saravanampatti, Singanallur, and Tiruppur, with fast response for homes and commercial spaces.
           </p>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -65,7 +61,7 @@ export function ServiceAreas() {
           </motion.ul>
         </div>
         <motion.p variants={fadeInUp} className="mt-6 text-sm text-slate-500">
-          + Many more locations within 100km radius of Coimbatore
+          + We also serve nearby areas across the Coimbatore region and surrounding towns.
         </motion.p>
       </motion.div>
       <motion.div variants={fadeInUp}>

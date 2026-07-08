@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { createMetadata } from "@/lib/metadata";
 import { PageShell } from "@/components/sections/page-shell";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
@@ -26,12 +27,23 @@ export default function ProjectsPage() {
           <SectionHeading eyebrow="Projects" title="Completed work with a clear focus on durability and restraint." description="Each project reflects a thoughtful response to the site, the building, and the moisture problem at hand." />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {projects.map((project) => (
-              <GlassCard key={project.title} className="p-6">
-                <div className="h-40 rounded-[1.25rem] border border-slate-200 bg-[radial-gradient(circle_at_top_left,rgba(15,76,92,0.14),transparent_45%),linear-gradient(135deg,#f7f4ea,#e9ecef)]" />
-                <p className="mt-5 text-sm font-medium uppercase tracking-[0.2em] text-slate-500">{project.type}</p>
-                <h3 className="mt-2 text-xl font-semibold text-slate-950">{project.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{project.description}</p>
-                <p className="mt-4 text-sm font-medium text-slate-700">{project.location}</p>
+              <GlassCard key={project.title} className="overflow-hidden p-0">
+                <div className="relative h-40 w-full overflow-hidden bg-slate-200">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={80}
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">{project.type}</p>
+                  <h3 className="mt-2 text-xl font-semibold text-slate-950">{project.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-600">{project.description}</p>
+                  <p className="mt-4 text-sm font-medium text-slate-700">{project.location}</p>
+                </div>
               </GlassCard>
             ))}
           </div>
